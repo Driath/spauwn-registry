@@ -2,9 +2,17 @@
 
 Public registry for installable Spauwn artifacts.
 
-The registry is catalogue truth, not runtime truth. Spauwn fetches this repo,
-checks out the latest SemVer tag, reads `index.json`, then proposes installs.
+The registry is catalogue truth, not runtime truth. Spauwn fetches HTTPS `index.json`,
+resolves artifact URLs relative to it, then proposes installs.
 Active config remains local under `~/.spauwn`.
+
+Canonical runtime endpoint:
+
+```text
+https://raw.githubusercontent.com/Driath/spauwn-registry/main/index.json
+```
+
+Git tags are for authors and releases. App runtime must work without `git`.
 
 ## Artifacts
 
@@ -18,4 +26,3 @@ Active config remains local under `~/.spauwn`.
 - No remote content is executed directly.
 - Install destinations are relative to `~/.spauwn`.
 - Updates require user review.
-
