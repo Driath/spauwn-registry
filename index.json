@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-30",
+  "artifacts": [
+    {
+      "kind": "gambit-pack",
+      "id": "codex-basic",
+      "version": "1.0.0",
+      "title": "Codex basic",
+      "description": "Starter routing for Codex: localhost, git URLs, web pages, terminals, files, editors, Finder, and fallback.",
+      "requires": {
+        "commands": ["codex"]
+      },
+      "tags": ["codex", "starter"],
+      "url": "artifacts/gambits/codex-basic/artifact.json"
+    },
+    {
+      "kind": "skill",
+      "id": "spauwn-bridge",
+      "version": "1.0.0",
+      "title": "Spauwn bridge",
+      "description": "Agent skill documenting the Spauwn bridge commands and session context.",
+      "tags": ["agent", "bridge", "skill"],
+      "url": "artifacts/skills/spauwn-bridge/artifact.json"
+    }
+  ]
+}
+

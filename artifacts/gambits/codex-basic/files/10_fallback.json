@@ -1,0 +1,31 @@
+{
+  "enabled": false,
+  "name": "fallback",
+  "when": {
+    "kind": "always"
+  },
+  "then": {
+    "command": "codex -c 'developer_instructions={spauwnAgentInstructionsTomlString}'",
+    "adapter": "codex",
+    "cwd": "fixed:~/spauwn-data",
+    "tools": [
+      "injectWindowScreenshot",
+      "injectScreenshotBelow"
+    ],
+    "codexBypassHookTrust": false,
+    "args": [
+      "--no-alt-screen",
+      "--sandbox",
+      "workspace-write",
+      "-a",
+      "never"
+    ],
+    "injectFiles": [
+      {
+        "from": "{spauwnAgentSkill}",
+        "to": "{sessionDir}/.agents/skills/spauwn/SKILL.md",
+        "symlink": true
+      }
+    ]
+  }
+}

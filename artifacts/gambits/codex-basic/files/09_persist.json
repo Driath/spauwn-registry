@@ -1,0 +1,31 @@
+{
+  "name": "persist",
+  "enabled": true,
+  "when": {
+    "kind": "always"
+  },
+  "then": {
+    "cwd": "shellCwd",
+    "command": "codex --no-alt-screen --sandbox workspace-write -a never -c 'developer_instructions={spauwnAgentInstructionsTomlString}'",
+    "adapter": "richProcess",
+    "statePatterns": {
+      "busy": [
+        "^(Thinking|Working|\\[Esc\\]|Loading)"
+      ],
+      "idle": [
+        "[▌►]|>\\s*$|\\(y/n\\)"
+      ]
+    },
+    "tools": [
+      "injectWindowScreenshot",
+      "injectScreenshotBelow"
+    ],
+    "injectFiles": [
+      {
+        "from": "{spauwnAgentSkill}",
+        "to": "{sessionDir}/.agents/skills/spauwn/SKILL.md",
+        "symlink": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spauwn.dev/schemas/index.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "artifacts"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "updatedAt": { "type": "string" },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "id", "version", "title", "description", "url"],
+        "properties": {
+          "kind": { "enum": ["gambit-pack", "skill", "theme"] },
+          "id": { "type": "string" },
+          "version": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "requires": { "type": "object" },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "url": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

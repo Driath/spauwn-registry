@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "kind": "skill",
+  "id": "spauwn-bridge",
+  "version": "1.0.0",
+  "title": "Spauwn bridge",
+  "description": "Agent skill documenting the Spauwn bridge commands and session context.",
+  "spauwn": ">=0.1.0",
+  "tags": ["agent", "bridge", "skill"],
+  "files": [
+    {
+      "from": "files/SKILL.md",
+      "to": "agent-skill/spauwn/SKILL.md"
+    }
+  ],
+  "docs": {
+    "usage": "Install this skill so spawned agents can discover Spauwn bridge actions."
+  }
+}
+

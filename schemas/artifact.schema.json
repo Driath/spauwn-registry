@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spauwn.dev/schemas/artifact.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "kind", "id", "version", "title", "description", "files"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "kind": { "enum": ["gambit-pack", "skill", "theme"] },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "version": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "spauwn": { "type": "string" },
+    "requires": {
+      "type": "object",
+      "properties": {
+        "commands": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to"],
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" },
+          "template": { "type": "boolean" },
+          "symlink": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "docs": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
+

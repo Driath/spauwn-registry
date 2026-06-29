@@ -1,0 +1,40 @@
+{
+  "enabled": true,
+  "name": "localhost",
+  "when": {
+    "conditions": [
+      {
+        "category": "browser",
+        "kind": "appCategory"
+      },
+      {
+        "kind": "urlLocalhost"
+      }
+    ],
+    "kind": "all"
+  },
+  "then": {
+    "command": "codex --no-alt-screen --sandbox workspace-write -a never -c 'developer_instructions={spauwnAgentInstructionsTomlString}'",
+    "adapter": "richProcess",
+    "cwd": "portToCwd",
+    "tools": [
+      "injectWindowScreenshot",
+      "injectScreenshotBelow"
+    ],
+    "statePatterns": {
+      "busy": [
+        "^(Thinking|Working|\\[Esc\\]|Loading)"
+      ],
+      "idle": [
+        "[▌►]|>\\s*$|\\(y/n\\)"
+      ]
+    },
+    "injectFiles": [
+      {
+        "from": "{spauwnAgentSkill}",
+        "to": "{sessionDir}/.agents/skills/spauwn/SKILL.md",
+        "symlink": true
+      }
+    ]
+  }
+}

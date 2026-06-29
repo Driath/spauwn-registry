@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "kind": "gambit-pack",
+  "id": "codex-basic",
+  "version": "1.0.0",
+  "title": "Codex basic",
+  "description": "Routes common desktop contexts to Codex with direct Codex launch.",
+  "spauwn": ">=0.1.0",
+  "requires": {
+    "commands": ["codex"]
+  },
+  "tags": ["codex", "starter"],
+  "files": [
+    { "from": "files/01_localhost.json", "to": "gambits/01_localhost.json" },
+    { "from": "files/02_git-clone.json", "to": "gambits/02_git-clone.json" },
+    { "from": "files/03_web.json", "to": "gambits/03_web.json" },
+    { "from": "files/04_terminal.json", "to": "gambits/04_terminal.json" },
+    { "from": "files/05_csv-data.json", "to": "gambits/05_csv-data.json" },
+    { "from": "files/06_file.json", "to": "gambits/06_file.json" },
+    { "from": "files/07_editor.json", "to": "gambits/07_editor.json" },
+    { "from": "files/08_finder.json", "to": "gambits/08_finder.json" },
+    { "from": "files/09_persist.json", "to": "gambits/09_persist.json" },
+    { "from": "files/10_fallback.json", "to": "gambits/10_fallback.json" }
+  ],
+  "docs": {
+    "usage": "Install this pack when Codex is your default Spauwn agent."
+  }
+}
+
