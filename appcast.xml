@@ -4,5 +4,14 @@
     <title>Spauwn Updates</title>
     <link>https://github.com/Driath/spauwn-registry</link>
     <description>Spauwn Sparkle appcast.</description>
+    <item>
+      <title>Version 0.0.1-dev.2</title>
+      <pubDate>Tue, 30 Jun 2026 16:16:35 +0000</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>0.0.1-dev.2</sparkle:shortVersionString>
+      <sparkle:channel>dev</sparkle:channel>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/Driath/spauwn/releases/download/v0.0.1-dev.2/Spauwn-0.0.1-dev.2.zip" sparkle:version="2" sparkle:shortVersionString="0.0.1-dev.2" length="2828776" type="application/octet-stream" sparkle:edSignature="JAmwFS/C594oksuAIKgYWfuygaHaipwuHR8Kir9FkAkbis4WOdIfxO5LdCphKLRUVLrKNu86N0DbBr3JtPS8Cw=="/>
+    </item>
   </channel>
 </rss>
