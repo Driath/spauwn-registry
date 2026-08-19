@@ -85,5 +85,14 @@
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/Driath/spauwn-registry/releases/download/v0.0.1-dev.11/Spauwn-0.0.1-dev.11.zip" sparkle:version="11" sparkle:shortVersionString="0.0.1-dev.11" length="2910813" type="application/octet-stream" sparkle:edSignature="tZ7hQkyMMLxjkj/OgGicJYb6x8l85ZREuNVJHetp29FHOgFeIDV/K5hjbQfvG7jFY3Vc5xtmBzu/DMZFOOelBw=="/>
     </item>
+    <item>
+      <title>Version 0.0.1-dev.12</title>
+      <pubDate>Wed, 19 Aug 2026 23:05:20 +0000</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>0.0.1-dev.12</sparkle:shortVersionString>
+      <sparkle:channel>dev</sparkle:channel>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/Driath/spauwn-registry/releases/download/v0.0.1-dev.12/Spauwn-0.0.1-dev.12.zip" sparkle:version="12" sparkle:shortVersionString="0.0.1-dev.12" length="2911357" type="application/octet-stream" sparkle:edSignature="V0RuWLCWZbKScHHs7l/Y/ZgnK7r+8Pu0ZTmcTtX9e8N/zFBy8Vmn9vOE1UEbwpDaMY814AXFdFLjj5y6wgCNAg=="/>
+    </item>
   </channel>
 </rss>
